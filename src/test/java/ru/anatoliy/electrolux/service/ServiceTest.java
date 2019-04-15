@@ -28,7 +28,7 @@ class ServiceTest {
         service.setLogFilePath(pathLogFile);
         service.findErrors(errorsCounter::set);
 
-        new FileAssert(new File("expectedFilePath")).hasSameContentAs(new File("expectedResult.txt"));
+        new FileAssert(new File(Globals.RESULT_FILE_PATH)).hasSameContentAs(new File("src/test/resources/expectedResult.txt"));
         assertEquals(2, errorsCounter.get());
     }
 

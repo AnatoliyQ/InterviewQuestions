@@ -61,9 +61,12 @@ public class Service {
         } catch (IOException e) {
             logger.error("Error on read file", e);
         } finally {
-            writeResult(resultCache);
+            if(!(errorCounter ==0)) {
+                writeResult(resultCache);
+            }
             consumer.accept(errorCounter);
             cacheData.clear();
+            errorCounter = 0;
             stopwatch.stop();
             long time = stopwatch.elapsed(TimeUnit.SECONDS);
             logger.debug("Work time {} seconds", time);
