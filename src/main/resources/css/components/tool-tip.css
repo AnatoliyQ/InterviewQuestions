@@ -1,0 +1,8 @@
+.tooltip {
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0 0 0 0;
+    -fx-effect: dropshadow( one-pass-box , #808080 , 5, 0.0 , 0 , 0 );
+    -fx-font-family: "Segoe UI Semilight", "Segoe UI Light", "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #949494;
+}

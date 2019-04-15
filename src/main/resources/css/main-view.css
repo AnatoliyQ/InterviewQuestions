@@ -1,0 +1,81 @@
+
+.background{
+    -fx-background-color: #1d1d1d;
+}
+
+.header{
+    -fx-font-size: 42pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: whit;
+}
+
+.item-title{
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+}
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+
+.page-corner {
+    -fx-padding: 4.5 4.5 4.5 4.5;
+    -fx-background-color: transparent;
+    -fx-shape: null;
+    -fx-effect: null;
+}
+
+.title {
+    -fx-text-fill: #7FFF00;
+}
+
+.titled-pane > .title
+{
+    -fx-background-color: -fx-box-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+    -fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
+}
+
+.control-pane
+{
+    -fx-spacing: 10px;
+    -fx-padding: 20px;
+}
+
+.control-pane .label .text
+{
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-font-family: "Arial";
+    -fx-fill: white;
+    -fx-text-alignment: center;
+}
+
+.log-output-area
+{
+    -fx-padding: 5px;
+}
+
+HBox
+{
+    -fx-alignment: center ;
+}
+
+.app-view
+{
+    -fx-background-color: #1d1d1d;
+    -fx-padding: 15 20 15 10;
+}
+
